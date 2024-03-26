@@ -23,13 +23,13 @@ on:
       docker_img:
         description: "Set the docker image"
         required: false
-        default: "ophub/openwrt-aarch64:latest"
+        default: "howxchove/openwrt-aarch64:latest"
         type: choice
         options:
-          - ophub/openwrt-aarch64:latest
+          - howxchove/openwrt-aarch64:latest
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Shanghai
   MAKE_DOCKER_SH: config/docker/make_docker_image.sh
   DOCKER_OUTPATH: out
 
